@@ -12,7 +12,7 @@ const useGetOtherUsers = () => {
         const fetchOtherUsers = async () => {
             try {
                 axios.defaults.withCredentials = true;
-                const res = await axios.get(`${BASE_URL}/user`);
+                const res = await axios.get(`${BASE_URL}/api/user`);
                 // store
                 console.log("other users -> ",res);
                 dispatch(setOtherUsers(res.data));

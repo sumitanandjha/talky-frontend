@@ -12,7 +12,7 @@ const useGetMessages = () => {
         const fetchMessages = async () => {
             try {
                 axios.defaults.withCredentials = true;
-                const res = await axios.get(`${BASE_URL}/message/${selectedUser?._id}`);
+                const res = await axios.get(`${BASE_URL}/api/message/${selectedUser?._id}`);
                 dispatch(setMessages(res.data))
             } catch (error) {
                 console.log(error);
