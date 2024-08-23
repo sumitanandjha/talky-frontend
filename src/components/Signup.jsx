@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import axios from "axios";
 import toast from "react-hot-toast";
-import { BASE_URL } from '..';
+
+const BASE_URL=process.env.REACT_APP_BACKEND;
 
 
 const Signup = () => {

@@ -46,5 +46,6 @@
   "devDependencies": {
     "daisyui": "^4.9.0",
     "tailwindcss": "^3.4.3"
-  }
+  },
+  "proxy": "https://talky-backend-bgt5.onrender.com"
 }
