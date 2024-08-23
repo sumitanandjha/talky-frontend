@@ -1,0 +1,1 @@
+export const BaseUrl = "https://talky-backend-bgt5.onrender.com"

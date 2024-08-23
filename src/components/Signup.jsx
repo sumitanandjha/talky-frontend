@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import axios from "axios";
 import toast from "react-hot-toast";
+import { BaseUrl } from '../constants/BaseUrl';
 
-const BASE_URL=process.env.REACT_APP_BACKEND;
+
 
 
 const Signup = () => {
@@ -21,7 +22,7 @@ const Signup = () => {
   const onSubmitHandler = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`${BASE_URL}/api/user/register`, user, {
+      const res = await axios.post(`${BaseUrl}/api/v1/user/register`, user, {
         headers: {
           'Content-Type': 'application/json'
         },
